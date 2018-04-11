@@ -1,0 +1,34 @@
+http://docs.ansible.com/ansible/latest/galaxy.html#using-a-custom-role-skeleton
+https://galaxy.ansible.com/intro
+http://www.mydailytutorials.com/introduction-shell-command-module-ansible/
+https://stackoverflow.com/questions/42947301/ansible-multiple-roles
+https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/installation_guide/index
+https://github.com/samdoran/ansible-role-jboss-eap/blob/master/defaults/main.yml --> roles jboss eap
+https://github.com/search?utf8=%E2%9C%93&q=jboss+playbook+ansible&type= ---> github code
+https://www.simplilearn.com/cloud-computing/devops-practitioner-certification-training#/exam-and-certification ---> devops link
+http://adityo.blog.binusian.org/?tag=redhat-run-level-and-how-to-make-tomcat-service-to-run-on-boot-time-in-centos ---> chkconfig file
+https://www.jeffgeerling.com/blog/yaml-best-practices-ansible-playbooks-tasks ---> ansible tut
+https://www.edureka.co/blog/devops-tutorial ---> devops tut
+https://www.linuxquestions.org/questions/linux-networking-3/ssh-connect-to-host-192-168-168-94-port-22-connection-refused-4175443648/ ---> ssh issue
+http://jagadesh4java.blogspot.in/2016/02/ansible-roles-advanced-example.html ---> tomcat installation
+https://www.ansible.com/blog/2014/02/19/ansible-vault ---> ansible vault
+https://www.youtube.com/watch?v=Kq6ICgL6PSc ---> ansible vault video
+http://ansible-docs.readthedocs.io/zh/stable-2.0/rst/playbooks_vault.html ---> from ansible documentaion
+https://cloudacademy.com/blog/going-deeper-into-ansible-playbooks/ ---> roles explaination
+http://abregman.com/2015/12/25/ansible-write-and-run-your-first-playbook/ ---> ansible basics
+https://stackoverflow.com/questions/44150010/relationship-between-git-bit-bucket-and-source-tree ---> git,bitbucket,source tree
+https://www.edureka.co/blog/what-is-devops/ ---> edureka!
+https://www.digitalocean.com/community/tutorials/how-to-use-ansible-roles-to-abstract-your-infrastructure-environment ---> roles doc
+https://www.cloudbees.com/blog/using-git-jenkins -> using git with jenkins
+
+
+
+
+
+jboss:
+
+Installation path:
+C:\Users\mdodda\jbdevstudio
+
+
+
