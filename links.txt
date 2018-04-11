@@ -20,15 +20,3 @@ https://stackoverflow.com/questions/44150010/relationship-between-git-bit-bucket
 https://www.edureka.co/blog/what-is-devops/ ---> edureka!
 https://www.digitalocean.com/community/tutorials/how-to-use-ansible-roles-to-abstract-your-infrastructure-environment ---> roles doc
 https://www.cloudbees.com/blog/using-git-jenkins -> using git with jenkins
-
-
-
-
-
-jboss:
-
-Installation path:
-C:\Users\mdodda\jbdevstudio
-
-
-
