@@ -26,4 +26,4 @@ https://sourceforge.net/projects/gitextensions/ -> git dwnld
 https://git-extensions-documentation.readthedocs.io/en/latest/ -> git extensions
 http://tutorials.jenkov.com/git/index.html -> git client(source tree)
 https://valuebound.com/resources/blog/continuous-integration-using-jenkins-and-github-to-automate-deployment -> integrating jenkins and github and configuring github for jenkins
-https://guides.github.com/activities/hello-world/ -> git branching
+https://guides.github.com/activities/hello-world/ -> git branching (nice to follow)
