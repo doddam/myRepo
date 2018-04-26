@@ -29,3 +29,4 @@ https://valuebound.com/resources/blog/continuous-integration-using-jenkins-and-g
 https://guides.github.com/activities/hello-world/ -> git branching (nice to follow)
 https://code.tutsplus.com/tutorials/git-on-windows-for-newbs--net-25847 -> about git.exe (Git gui)
 https://nathanj.github.io/gitguide/tour.html -> git extension gooooddddd guide
+http://www.codejava.net/servers/tomcat/how-to-deploy-a-java-web-application-on-tomcat -> deploy .war methods
