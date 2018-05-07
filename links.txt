@@ -32,3 +32,4 @@ https://nathanj.github.io/gitguide/tour.html -> git extension gooooddddd guide
 http://www.codejava.net/servers/tomcat/how-to-deploy-a-java-web-application-on-tomcat -> deploy .war methods
 https://www.youtube.com/watch?v=Fi9pgrMlQZY -> jenkins begginer
 http://scmquest.com/continuous-integration-vs-continuous-delivery-vs-continuous-deployment/ -> continuos integration,cdelivery, cdeploy
+http://www.baeldung.com/jenkins-job-schedule -> about jenkins build trigger options
