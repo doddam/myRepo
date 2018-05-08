@@ -1,0 +1,203 @@
+10/4/2018
+Downloaded jenkins on windows
+Started jenkins using command prompt and done with the following command to extract the .war file (java -jar jenkins.war). 
+Accessed jenkins through the link −> http://localhost:8080
+Jenkins dashboard is opened by providing user name and password
+Exploring jenkins dashboard/console
+Changed the port from 8080 to 8088 using the command java -jar jenkins.war --httpPort=8088 and accessed jenkins through http://localhost:8088
+Troubleshooting the issue regarding plugins as default plugins are not available in the dashboard.
+
+11/4/2018
+Working with the scenario: Compiling and running a java file in jenkins on Windows i.e., by integrating Jenkins and GitHub (with the GitHub Jenkins Plugin)
+Exploring GitHub repository
+Created an account in github -> https://github.com/ and created a new repository
+Uploaded some files into repository by browsing the fil path and committed the changes.
+Checked the files present in the particular repo whether they are committed or not.
+Modified files which are already uploaded in the repo and again committed
+Deleted files in the repository by selecting particular file to be deleted and again committed
+I have pushed the code into the git repository and committed the changes required, debugging the plugins issue in jenkins and doing documentation parallely.
+
+12/4/2018
+Done with a scenario Git Plugin setup in Jenkins
+Downloaded the latest Git.exe file for Windows and Installed 
+Aaccessing git from windows command prompt without using Github server
+Got to know about Git advantages
+Working with git commands which are used to set a git repository
+
+13/4/2018
+Working with the scenario integrating jenkins and github i.e., Compiling and running a java file in jenkins on Windows
+Successfully pushed the code into git repository
+But unable to push code from git repository to the jenkins because of the following issue.
+  Error occurred due to "SSL certificate problem: self signed certificate in certificate chain"
+To check the issue, I have cloned files from the repository to local environment. But again faced the same issue.
+Unable to access git, so troubleshooting the above issue.
+
+16/4/2018
+Done with the scenario:
+Integrating jenkins and github via github plugin; i.e., Compiling and running a java application in jenkins on Windows
+Created a job in jenkins
+Configured the job with respective details:
+ Gave Project details and GitHub url (as my repository is hosted from github)
+ Selected Source Code Management (SCM) as Git and provided the respective url
+ Next pushed the code; now coming to Build section, opted for add build step 
+ Gave the commands required for compiling and running the application by selecting the option Execute Windows batch command.
+ Saved and Build the job successfully; Now build history is seen by clicking #1 
+ Output is viewed in console output section once job is build successfully.
+ 
+17/4/2018
+Doing research and development on pull request and merge request,
+Attended KT session on NOC (Network Operations Center) and Nagios,
+Done with the issue "SSL certificate problem: self signed certificate in certificate chain",
+Tested Jenkins by picking up an appilcation from git repositroy to integrate,
+Troubleshooting the issue: Class names, are only accepted if annotation processing is explicitly requested.
+
+18/4/2018
+Done with the issue "Class names, are only accepted if annotation processing is explicitly requested",
+Tested the scenario again in Jenkins by picking up an appilcation from git repositroy to integrate - worked fine,
+Done documnetation on the scenarios: Jenkins - Git Setup & Integrating Jenkins - GitHub
+Attended KT session on disk alerts and application alerts
+Getting to know about Network Operations Center, its design and managing NOC
+
+19/4/2018
+Got to know about 
+Booting process in linux
+Steps involved in the booting process
+Commands to Monitor Swap Space Usage in Linux
+Usage of nice and renice commands
+Exploring the git gui 
+Doing r&d on git on windows
+
+20/4/2018
+Attended a meeting on an effective communication,
+Got to know about logrotate,
+Doing r&d on git extension on windows,
+Working with the scenario Jenkins Tomcat setup,
+Troubleshooting the issue "FAIL - Application at context path [/jenkins] could not be started".
+ 
+23/4/2018
+Done with the issue "FAIL - Application at context path [/jenkins] could not be started",
+Configured the following in tomcat web application manager to deploy jenkins.war file,
+Context Path 	
+XML Configuration file URL	
+WAR or Directory URL
+Successfully deployed jenkins.war in the tomcat,
+Troubleshooting the issue "The origin server did not find a current representation for the target resource or is not willing to disclose that one exists" while accessing the jenkins.
+
+24/4/2018
+I have been monitoring mails,
+Started the jenkins application from tomcat, message is displayed as "OK - Started application at context path [/jenkins]",
+Tried to access jenkins through http://localhost:8080/jenkins/ but facing the issue "HTTP Status 404 – Not Found",
+Troubleshooting the above issue,
+Meanwhile trying to deploy jenkins.war directly by uploading WAR file without configuring, but unable to do so because the connection to the server was reset while the page was loading.
+
+25/4/2018
+Checked the opened ports on the system by using netstat command and its options,
+And changed the tomcat port as jenkins and tomcat are running on the same port; some port conflicts occurred,
+Stopped the tomcat server
+Opened Tomcat_Home/conf/server.xml file to edit 
+Looked for the port *8080* in the xml file and replaced with the other available port.
+<Connector port="8080" protocol="HTTP/1.1" 
+connectionTimeout="20000" 
+redirectPort="8443" />
+Wrote playbook for deploying jenkins.war in the tomcat,
+Successfully deployed jenkins.war in the tomcat,
+
+26/4/2018
+Working with the scenario jenkins tomcat setup,
+Modifying the playbook jenkins.war,
+Working with the ansible modules that enables the port 8080 such that jenkins would run on that port,
+Troubleshooting the issues:
+Encountered exception [javax.management.RuntimeOperationsException: Exception invoking method check],
+403 Access Denied - You are not authorized to view this page
+By default the Manager is only accessible from a browser running on the same machine as Tomcat. If you wish to modify this restriction, you'll need to edit the Manager's context.xml file. 
+
+27/4/2018
+Done with the scenario jenkins tomcat setup on windows,
+Installed tomcat on windows,
+Changed the default port of tomcat server in conf/tomcat-users.xml,
+Downloaded jenkins.war,
+Placed the jenkins.war file in webapps folder,
+And successfully deployed jenkins.war application in tomcat web application manager,
+Accessed the jenkins application from the tomcat,
+Working with the documentation for the scenario jenkins-tomcat setup.
+
+2/5/2018
+Done with the documentation jenkins-tomcat setup,
+Done with the scenario, jenkins picks up a java application from local system which is placed in the jenkins workplace an then a job is build,
+Done document on the above scenario,
+Attended KT session on 
+LDAP servers,Active Directory,User creation in Physical box and VM.
+
+3/5/2018
+Went through the LDAP and AD also Git tutorial sessions,
+Installed git on windows and accessed it from git bash,
+After building the project (integrating Jenkins and Git) received the above error on the console output section,
+" ERROR: Error cloning remote repo 'origin' "
+Troubleshooted above issue by performing the below steps:
+1. Go to Manage Jenkins  >  Global Tool Configurations 
+2. Under Git configuration  >  Git installations 
+3. Enter complete path to git executable including git.exe  > Save  > Again build the project
+Done with the job jenkins and github integration and built it in other way through global tool configuration.
+
+4/5/2018
+Went through the jenkins beginner tutorial regarding:
+Scheduling cron jobs in jenkins and 
+About the build trigger configuration with options build periodically and Poll SCM ,
+Done with a scenario Jenkins integration with GIT - SCM successfully,
+Configured Poll SCM in build triggers by scheduling cron job,
+Working with the documentation.
+
+7/5/2018
+Done with the documentation on the scenario - Jenkins integration with GIT - SCM,
+Done with a scenario - scheduling a job in jenkins by using the option build periodically in build trigger section,
+Scheduled job in jenkins by using cron compliant format,
+Completed documentation regarding the scenario.
+
+8/5/2018
+Made some modifications in the documentation on the scenario - Jenkins integration with GIT - SCM,
+Gone through Git and GitHub Beginner Tutorial on Branching and Merging concept,
+Got to know about few commands those are required for Branching and Merging,
+Working with Branching & Merging, made changes in github using git commands through git bash,
+Troubleshooted the issue: 
+! [rejected] master -> master (fetch first)
+error: failed to push some refs to 'git repo url'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+To change repository name > click on particular repository to be changed > goto settings > change the name > click rename
+ 
+Done the documentation on the following:
+Git & Git Hub Introduction
+Installing Git on windows
+Creating a branch
+Merging a branch
+Deleting a branch
+
+Preparing notes on the concept that I have worked it.
+
+
+
+
+Watched jenkins beginner tutorial - 1,2,8
+git and github beginner watch session 1 and session 3
+
+Context Path (required): /jenkins
+XML Configuration file URL:  (:C:/path/to/context.xml)->/data/Tomcat/conf/context.xml
+WAR or Directory URL: -> path to context.xml  -> (/path/to/bar.war!/) ->  /home/dmanasa/Desktop/jenkins.
+/jenkins
+/data/Tomcat/conf
+/home/dmanasa/Desktop
+https://www.nagios.org/about/overview/ -> nagios working
+
+Task -> create number of child branches and integrate to master branch
+Task -> Configuring GitHub for Jenkins -> https://valuebound.com/resources/blog/continuous-integration-using-jenkins-and-github-to-automate-deployment
+Task -> about git extensions -> https://media.readthedocs.org/pdf/git-extensions-documentation/latest/git-extensions-documentation.pdf
+Task -> setup jenkins.war in tomcat and run it 
+Task -> Deploying a war file from Jenkins to Tomcat(https://www.packtpub.com/mapt/book/virtualization_and_cloud/9781788471060/5/05lvl1sec34/deploying-a-war-file-from-jenkins-to-tomcat)
+link -> http://www.baeldung.com/jenkins-job-schedule
+Reference: https://www.tutorialspoint.com/jenkins/jenkins_git_setup.htm
+https://www.cloudbees.com/blog/using-git-jenkins
+In your Jenkins Dashboard (Home screen), click the Manage Jenkins option on the left hand side.
+
